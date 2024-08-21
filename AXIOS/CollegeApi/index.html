@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colleges</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="flex items-center flex-col justify-center gap-5 pt-10">
+
+    <div>
+        <input class="h-8 border-2 border-black rounded-lg p-3" type="text" name="" id="" placeholder="Search Country">
+        <button class="border-2 border-black rounded-lg h-8 px-3">Search</button>
+    </div>
+    <ul id="list"></ul>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
