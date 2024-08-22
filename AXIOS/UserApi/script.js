@@ -46,7 +46,12 @@ async function show(url, searchInput) {
                     <span class="font-bold border p-2 w-full border-gray-600 col-span-1">PCode: ${col.company.address.postalCode}</span>
                     <span class="font-bold border p-2 w-full border-gray-600 col-span-2">Domain: ${col.crypto.coin}</span>
 
+<<<<<<< HEAD
             </div> `;
+=======
+            </div>
+            `;
+>>>>>>> a1d9a9560835ab8b488eac5020be15349e7cd104
         ul.appendChild(li);
     } else {
         ul.innerHTML = "<li>No users found.</li>";
