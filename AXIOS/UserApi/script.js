@@ -46,25 +46,6 @@ async function show(url, searchInput) {
 
             </div>
             `;
-        // li.innerHTML = `
-        // <img src="${user.image}" class="w-[100px] h-[100px] text-center rounded-full mb-4" alt="User Image" />
-        // <h2 class="text-xl font-bold">${user.firstName} ${user.lastName}</h2>
-        // <p><strong>ID:</strong> ${user.id}</p>
-        // <p><strong>Username:</strong> ${user.username}</p>
-        // <p><strong>Email:</strong> ${user.email}</p>
-        // <p><strong>Phone:</strong> ${user.phone}</p>
-        // <p><strong>Gender:</strong> ${user.gender}</p>
-        // <p><strong>Age:</strong> ${user.age}</p>
-        // <p><strong>Birth Date:</strong> ${user.birthDate}</p>
-        // <p><strong>Blood Group:</strong> ${user.bloodGroup}</p>
-        // <p><strong>Eye Color:</strong> ${user.eyeColor}</p>
-        // <p><strong>Hair Color:</strong> ${user.hair.color} (${user.hair.type})</p>
-        // <p><strong>Address:</strong> ${user.address.address}, ${user.address.city}, ${user.address.state}, ${user.address.country}</p>
-        // <p><strong>University:</strong> ${user.university}</p>
-        // <p><strong>Company:</strong> ${user.company.name} (${user.company.department}, ${user.company.title})</p>
-        // <p><strong>Bank:</strong> ${user.bank.cardType} - ${user.bank.cardNumber} (Expires: ${user.bank.cardExpire})</p>
-        // <p><strong>Cryptocurrency:</strong> ${user.crypto.coin} (Wallet: ${user.crypto.wallet}, Network: ${user.crypto.network})</p>
-        // <p><strong>Role:</strong> ${user.role}</p>`;
         ul.appendChild(li);
     } else {
         ul.innerHTML = "<li>No users found.</li>";
