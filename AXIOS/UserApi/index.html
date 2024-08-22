@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colleges</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="flex flex-col gap-1 bg-gray-100">
+
+    <nav
+        class="fixed top-0 z-10 flex items-center justify-around w-full bg-gray-200 shadow-[0_3px_10px_rgb(0,0,0,0.2)] ">
+
+        <div class="py-2 w-96">
+
+            <form class="max-w-md mx-auto">
+                <label for="default-search"
+                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="search" id="default-search"
+                        class="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg outline-none ps-10 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search id..." required />
+                    <button type="submit"
+                        class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                </div>
+            </form>
+
+        </div>
+    </nav>
+    <div class="flex w-full h-screen overflow-x-hidden">
+        <div
+            class="text-gray-600 z-0 fixed overflow-hidden mt-4 rounded pt-20 top-16 left-0 w-[20%] h-[100vh] shadow-[0_3px_10px_rgb(0,0,0,0.2)] flex flex-col items-start  gap-5 bg-gray-50">
+            <a class="w-full p-10 py-3 text-xl font-semibold hover:text-blue-400 hover:bg-gray-200" href="#">About</a>
+            <a class="w-full p-10 py-3 text-xl font-semibold hover:text-blue-400 hover:bg-gray-200" href="#">Team</a>
+            <a class="w-full p-10 py-3 text-xl font-semibold hover:text-blue-400 hover:bg-gray-200" href="#">Work</a>
+            <a class="w-full p-10 py-3 text-xl font-semibold hover:text-blue-400 hover:bg-gray-200" href="#">Help</a>
+        </div>
+
+        <div class="container right-0 w[70%] overflow-hidden flex-1 mt-20 ml-[21%]">
+            <ul class="flex flex-wrap gap-5 space-y-3">
+                <!-- User list will be appended here -->
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
