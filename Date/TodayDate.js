@@ -8,16 +8,16 @@
 // console.log(day.toLocaleDateString());
 // console.log(day.toLocaleTimeString());
 
-const seconds = new Date().getTime() / 1000;
+// const seconds = new Date().getTime() / 1000;
 
-setTimeout(() => {
-    // prints out "2", meaning that the callback is not called immediately after 500 milliseconds.
-    console.log(`Ran after ${Math.floor(new Date().getTime() / 1000 - seconds)} seconds`);
-}, 500);
+// setTimeout(() => {
+//     // prints out "2", meaning that the callback is not called immediately after 500 milliseconds.
+//     console.log(`Ran after ${Math.floor(new Date().getTime() / 1000 - seconds)} seconds`);
+// }, 500);
 
-while (true) {
-    if (new Date().getTime() / 1000 - seconds >= 2) {
-        console.log("Good, looped for 2 seconds");
-        break;
-    }
-}
+// while (true) {
+//     if (new Date().getTime() / 1000 - seconds >= 2) {
+//         console.log("Good, looped for 2 seconds");
+//         break;
+//     }
+// }
